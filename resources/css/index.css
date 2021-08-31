@@ -1,0 +1,94 @@
+.{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #138a46;
+}
+.grid-conteiner{
+	display: grid;	
+	margin: 20px;
+	grid-template-rows: 100px  600px 600px 100px;
+	grid-template-columns: 1000px auto;
+	gap: 15px;
+	grid-template-areas: 
+	"nav nav"
+	"banner banner"
+	"promocion especiales"
+	"contacto contacto";
+}
+.nav {
+	grid-area: nav;
+	background: #ff7700;
+	display: flex;
+	font-size: 30px;
+}
+.nav > ul {
+	padding: 0;
+	margin: 0;
+	align-self: center;
+	display: inline-block;
+}
+.nav >  a >img{
+	width: 175px;
+	height: 75px;
+	margin: 12px;
+	margin-right: 200px;
+	margin-left: 25px;
+}
+.nav > ul > li{
+	align-items: center;
+	display: inline-block;
+	margin-right: 50px ;
+	margin-left: 50px;
+}
+
+.nav > ul > li > a{
+	text-decoration: none;
+}
+
+.banner{
+	grid-area: banner;
+	background: #efd28d;
+}
+.promocion{
+	grid-area: promocion;
+	background: #00afb5;
+}
+.especiales{
+	grid-area: especiales;
+	background: #a30000;
+}
+.contactos{
+	grid-area: contacto;
+	background: #004777;
+}
+
+@media (max-width: 1250px){
+	.grid-conteiner{
+		grid-template-rows: 100px  600px 600px 600px 100px;
+		grid-template-columns: auto auto;
+		gap: 15px;
+		grid-template-areas: 
+		"nav nav"
+		"banner banner"
+		"promocion promocion"
+		"especiales especiales"
+		"contacto contacto";
+	}
+}
+
+@media  (max-width: 800px){
+	.grid-conteiner{
+		grid-template-rows: 100px  600px 600px 600px 100px;
+		grid-template-columns: auto auto;
+		gap: 15px;
+		grid-template-areas: 
+		"nav nav"
+		"banner banner"
+		"promocion promocion"
+		"especiales especiales"
+		"contacto contacto";
+	}
+}
