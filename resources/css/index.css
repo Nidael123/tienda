@@ -52,9 +52,33 @@ body{
 	grid-area: banner;
 	background: #efd28d;
 }
+.especial_venta{
+	width: 1450px;
+	height: 525px;
+	margin: 50px;
+	background-color: #ffffff;
+}
+.novedad{
+	background-color: black;
+	margin: 25px 15px;
+	width: 446px;
+	height: 471px;
+	display: inline-block;
+	border: black 2px solid;
+}
+.novedad > img {
+	object-fit: cover;
+}
 .promocion{
 	grid-area: promocion;
 	background: #00afb5;
+}
+
+.img_container{
+	background: white;
+	width: 500px;
+	height: 400px;
+	margin: 25px;
 }
 .especiales{
 	grid-area: especiales;
